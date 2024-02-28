@@ -68,54 +68,48 @@
             <div class="row">
                 <div class="col-lg-8 text-center" style="text-align: left">
                     <!-- <hr class="light"> -->
-                    <h2 style="font-style: italic">This is Jeopardy!<h2>
-                    <h4>CONCEPT</h4>
+                    <h2 style="font-style: italic">NYPD Arrests(Historic) Data Analysis<h2>
+                    <h4>OVERVIEW</h4>
                     <p class="text-faded" style="font-size: small">
-                    This project describes a new, emerging way to shed light on a complex dataset and to communicate the findings with a broad audience. We begin this process with some exploratory data analysis, then create interactive visualizations and embed them within a narrative using infographics. We illustrate the concepts using data from 30 seasons of the TV game show Jeopardy!. Our findings uncover interesting patterns, both qualitative and quantitative, and explain our use of popular technologies during each phase of the process [1]. In this paper, we describe in detail the process by which we explored the data and built the visualizations that underlie that work.</p>
+                      This project aims to shed light on a a complex data related to arrests and to communicate the findings with a broad audience. We begin this process with some basic data preprocessing, then create interactive visualizations and embed them within a Tableau story. We illustrate the insights using NYPD arrests data from years 2018-2022 to uncover interesting patterns, both qualitative and quantitative, and trends in different types of crimes and how they varied across different locations in the city.</p>
                     <h4>DATA</h4>
                     <p class="text-faded" style="font-size: small">
-                    The initial dataset, found on Reddit, included qualitative data on over 200,000 Jeopardy! questions. It had data on the round that the question corresponded to, the questions and answers themselves, the dollar value of the question, and the show number and air date.
+                    The initial dataset, found on NYC Open Data website, included list of every arrest dating back to 2006 till previous calendar year. This data is manually extracted every quarter and reviewed by the Office of Management Analysis and Planning before being posted on the NYPD website. Each record represents an arrest effected in NYC by the NYPD and includes information about the type of crime, the location and time of enforcement. In addition, information related to suspect demographics is also included.
                     <br><br>
-                    In our exploratory data analysis phase, we found several interesting results. For example, we found that the most frequent type of answers were related to geography. We also noticed, while looking at the average question value across years, that there was a large increase between 2001 and 2002. In 2001, the average question value was $496. It increased to $940 in 2002. With additional research, we found that the values doubled on November 26, 2001. This finding informed some of the subsequent decisions we made with respect to comparing episodes across time.
+                     The dataset for the desired years was extracted in raw format and stored in BigQuery tables. The initial preprocessing tasks like removing nulls, transforming categorical columns and data cleaning were performed using Python(Pandas library). The processed data is again stored in a different BigQuery table so as to connect to Tableau Desktop using the Google BigQuery connection available in Tableau. The dashboards are facilitated with different filter actions to easily understand the patterns and information related to different types of offenses.
                     </p>
-                    <h4>PROCESS</h4>
+                    <h4>ANALYSIS</h4>
                     <p class="text-faded" style="font-size: small">
-                    In order to analyze the Jeopardy data and generate insights out of it, we followed the a process that looked at the data using the following visualizations:
+                    In order to analyze the NYPD arrest data and generate insights out of it, a systematic approach has been followed and demonstrated using the following visualizations:
                     <ul class="text-faded" style="font-size: small">
                         <li>
-                        Contestant and Gender Infographics and Line Chart
+                        Dashboard showing how no of arrests varied through each month and the ratio of male to female among the perpetrators
                         </li>
                         <li>
-                        Exploratory Data Analysis using Tableau</li>
+                        Bar Chart visualisations to understand the total arrests in each borough and the type of offense </li>
                         <li>
-                        Exploring the wagers data
+                        Highlight Table
                         </li>
                         <li>
-                        Parallel Coordinate Visualization
+                        Heatmap visualisation
                         </li>
                         <li>
-                        Linking Line Chart
+                        Area Chart
                         </li>
                         <li>
-                        Scatter Plot
-                        </li>
-                        <li>
-                        Bipartite Graph
-                        </li>
-                        <li>
-                        Jeopardy! Game Board
+                        Polygon Map Showing the boroughs and total arrests
                         </li>
                     </ul>
                     </p>
-                   <a href="http://people.ischool.berkeley.edu/~japple/jeopardy/" " class="btn btn-primary btn-xl page-scroll" target="_blank">View Visualization</a>
+                   <a href="https://public.tableau.com/app/profile/pranitha.poosa5276/viz/NYPD-Dashboard/NYPDStory" class="btn btn-primary btn-xl page-scroll" target="_blank">View Visualization</a>
                 </div>
                 <div class="col-lg-4 text-center" style="padding-top: 100px">
-                <img src="img/jeopardy/jeopardy1.png" class="img-responsive" alt="" style="margin :auto">
-                <p>Line chart showing the gender divide</p>
-                <img src="img/jeopardy/jeopardy2.png" class="img-responsive" alt="" style="margin :auto">
-                <p>Parallel Coordinate Visualization</p>
-                <img src="img/jeopardy/jeopardy3.png" class="img-responsive" alt="" style="margin :auto">
-                <p>Heatmap and Linking Line Chart</p>
+                <img src="img/viz1-nyc.png" class="img-responsive" alt="" style="margin :auto">
+                <p>Line chart showing the trends in total arrests</p>
+                <img src="img/viz2-nyc.png" class="img-responsive" alt="" style="margin :auto">
+                <p>Bar chart and Heatmap visualisations</p>
+                <img src="img/viz3-nyc.png" class="img-responsive" alt="" style="margin :auto">
+                <p>Highlight Table showing arrests by race & precinct</p>
                 </div>
             </div>
         </div>
