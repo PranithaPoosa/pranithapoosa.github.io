@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pranitha Poosa</title>
+    <link rel="shortcut icon" href="img/p.webp" />
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll"  href="index.html">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" style="text-align: left">
+                    <!-- <hr class="light"> -->
+                    <h2 style="font-style: italic; text-align:center">Arts Style Recommendation System</h2>
+                    <p style = "text-align: center">
+                        <iframe
+                                title="Formula-One-Analysis-Project"
+                                width="100%"
+                                height="600"
+                                src="https://app.powerbi.com/view?r=eyJrIjoiNjNlOTFiOWItM2ViOS00YmU0LWEwZjYtZDdmNDdmNDk4NDM5IiwidCI6ImE4ZWVjMjgxLWFhYTMtNGRhZS1hYzliLTlhMzk4YjkyMTVlNyIsImMiOjN9"
+                                frameborder="0"
+                                allowFullScreen="true">
+                        </iframe>
+                    </p>
+                    <h4>CONCEPT</h4>
+                    <p class="text-faded" style="font-size: small">
+                        Art appreciation is a subjective experience, and individuals often seek personalized recommendations that align with their preferences. This project aims to develop an Arts Recommendation System that incorporates user engagement metrics, specifically time spent on each artwork, to dynamically adjust and refine recommendations. Users can interact with the chatbot to inquire about specific art-related topics, and receive information about artists or art movements.</p>
+                        <h4>DATA</h4>
+                    <p class="text-faded" style="font-size: small">
+                    WikiArt dataset has details about different art pieces. This dataset includes information for about 103250 art pieces and we are considering important columns like artist name, date, genre, style, title and image labels
+                     </p>
+                    <h4>APPROACH</h4>
+                    <p class="text-faded" style="font-size: small">
+                        The approach for recommending art categories is based on two factors - user's initial preferences and time spent by user on a particular category.
+                        <br><br>
+                   A new user registers on the system by entering email id and password as part of the onboarding process. During account setup, the user selects art preferences indicating specific genres of the artworks he is interested in. Upon logging into the platform, the user is presented with an initial set of artwork recommendations based on their selected preferences. Initially, the recommendations are shown by randomly picking three artworks each for the selected preferences. Apart from these, the user sees a "More Artworks" tab which shows artworks other than the selected preferences. When a user selects any artwork to view details about that artwork, they can find information like - title of the artwork, artist name, genre of the artwork and the date that work has been created. To capture attention and retain users' enthusiasm, we show some of the similar artworks that the user might be interested in
+                    <br><br>
+                   While exploring the recommended artworks, the system tracks the time spent by the user on each piece. The user engages with various artworks, including those outside their initially selected preferences for diversification. The system analyses the accumulated time spent on different artwork categories to infer the user's evolving interests and engagement levels.
+Artworks that have garnered more time from the user contribute to a dynamic weighting system, influencing subsequent recommendations.
+The user's home page is dynamically adjusted based on their evolving preferences, showcasing a mix of both initially selected preferences and artworks that captured extended attention.
+                    <br><br>
+                        The user engages with the chatbot to inquire about specific artists, art history, or information related to them. The chatbot enhances the user experience by providing additional insights and fostering a conversational interaction around art-related topics.
+                    </p>
+                     <h4>ALGORITHMS AND TOOLS USED</h4>
+                    <p class="text-faded" style="font-size: small">
+                    In order to analyze the Jeopardy data and generate insights out of it, we followed the a process that looked at the data using the following visualizations:
+                    <ul class="text-faded" style="font-size: small">
+                            <ul>
+                                <li>Open AI CLIP Model - similarity search artworks</li>
+                                <li>Langchain LLMs - chatbot</li>
+                                <li>Pinecone - to store vector embeddings for arts' images</li>
+                                <li>Google Cloud Storage - storing tables related to artworks</li>
+                                <li>Streamlit - front end for the application</li>
+                                <li>Python - Primary programming language</li>
+                            </ul>
+                    </ul>
+                    </p>
+                   <a href="https://codelabs-preview.appspot.com/?file_id=1K5KXsSgMQ-jTM3fTJxYQWo1an-y66M_F1NfkNllJC_g#0"class="btn btn-primary btn-xl page-scroll" target="_blank">View Documentation</a>
+                </div>
+<!--                <div class="col-lg-4 text-center" style="padding-top: 100px">-->
+<!--                <img src="img/nyce/nyce1.png" class="img-responsive" alt="" style="margin :auto">-->
+<!--                <p>Visualizations</p>-->
+<!--                <img src="img/nyce/nyce2.png" class="img-responsive" alt="" style="margin :auto">-->
+<!--                <p>Correlations</p>-->
+<!--                <img src="img/nyce/nyce3.png" class="img-responsive" alt="" style="margin :auto">-->
+<!--                <p>Confusion Matrix</p>-->
+                </div>
+            </div>
+        </div>
+    </section>
+        <section id="contact" >
+        <div class="container">
+            <div class="row" class="call-to-action">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Get In Touch!</h2>
+                    <hr class="primary">
+                </div>
+                <div class="col-lg-2 col-lg-offset-3 text-center">
+                    <a href="https://github.com/binnie869" class="fa fa-github fa-3x wow bounceIn"></a>
+                </div>
+                <div class="col-lg-2  text-center">
+                    <a href="https://www.linkedin.com/in/anubhavg1" class="fa fa-linkedin fa-3x wow bounceIn"></a>
+                </div>
+                <!--div class="col-lg-1 text-center">
+                    <a class="fa fa-phone fa-3x wow bounceIn"></i>
+                </div-->
+                <div class="col-lg-2 text-center">
+                    <a href="mailto:anubhav.rg@berkeley.edu" class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+</section>
+
+
+
+</body>
+
+</html>
