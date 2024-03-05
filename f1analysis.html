@@ -67,7 +67,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center" style="text-align: left">
                     <!-- <hr class="light"> -->
-                    <h2 style="font-style: italic; text-align:center">Arts Style Recommendation System</h2>
+                    <h2 style="font-style: italic; text-align:center">Formula One Analysis</h2>
                     <p style = "text-align: center">
                         <iframe
                                 title="Formula-One-Analysis-Project"
@@ -78,41 +78,43 @@
                                 allowFullScreen="true">
                         </iframe>
                     </p>
-                    <h4>CONCEPT</h4>
-                    <p class="text-faded" style="font-size: small">
-                        Art appreciation is a subjective experience, and individuals often seek personalized recommendations that align with their preferences. This project aims to develop an Arts Recommendation System that incorporates user engagement metrics, specifically time spent on each artwork, to dynamically adjust and refine recommendations. Users can interact with the chatbot to inquire about specific art-related topics, and receive information about artists or art movements.</p>
-                        <h4>DATA</h4>
-                    <p class="text-faded" style="font-size: small">
-                    WikiArt dataset has details about different art pieces. This dataset includes information for about 103250 art pieces and we are considering important columns like artist name, date, genre, style, title and image labels
-                     </p>
-                    <h4>APPROACH</h4>
-                    <p class="text-faded" style="font-size: small">
-                        The approach for recommending art categories is based on two factors - user's initial preferences and time spent by user on a particular category.
-                        <br><br>
-                   A new user registers on the system by entering email id and password as part of the onboarding process. During account setup, the user selects art preferences indicating specific genres of the artworks he is interested in. Upon logging into the platform, the user is presented with an initial set of artwork recommendations based on their selected preferences. Initially, the recommendations are shown by randomly picking three artworks each for the selected preferences. Apart from these, the user sees a "More Artworks" tab which shows artworks other than the selected preferences. When a user selects any artwork to view details about that artwork, they can find information like - title of the artwork, artist name, genre of the artwork and the date that work has been created. To capture attention and retain users' enthusiasm, we show some of the similar artworks that the user might be interested in
-                    <br><br>
-                   While exploring the recommended artworks, the system tracks the time spent by the user on each piece. The user engages with various artworks, including those outside their initially selected preferences for diversification. The system analyses the accumulated time spent on different artwork categories to infer the user's evolving interests and engagement levels.
-Artworks that have garnered more time from the user contribute to a dynamic weighting system, influencing subsequent recommendations.
-The user's home page is dynamically adjusted based on their evolving preferences, showcasing a mix of both initially selected preferences and artworks that captured extended attention.
-                    <br><br>
-                        The user engages with the chatbot to inquire about specific artists, art history, or information related to them. The chatbot enhances the user experience by providing additional insights and fostering a conversational interaction around art-related topics.
-                    </p>
-                     <h4>ALGORITHMS AND TOOLS USED</h4>
-                    <p class="text-faded" style="font-size: small">
-                    In order to analyze the Jeopardy data and generate insights out of it, we followed the a process that looked at the data using the following visualizations:
-                    <ul class="text-faded" style="font-size: small">
-                            <ul>
-                                <li>Open AI CLIP Model - similarity search artworks</li>
-                                <li>Langchain LLMs - chatbot</li>
-                                <li>Pinecone - to store vector embeddings for arts' images</li>
-                                <li>Google Cloud Storage - storing tables related to artworks</li>
-                                <li>Streamlit - front end for the application</li>
-                                <li>Python - Primary programming language</li>
-                            </ul>
-                    </ul>
-                    </p>
-                   <a href="https://codelabs-preview.appspot.com/?file_id=1K5KXsSgMQ-jTM3fTJxYQWo1an-y66M_F1NfkNllJC_g#0"class="btn btn-primary btn-xl page-scroll" target="_blank">View Documentation</a>
-                </div>
+                    <img src="img/datamodel.png" class="img-responsive" alt="" style="margin :auto">
+                <p style="font-style: italic; text-align:center; color : black">Data Model(Snowflake Schema)</p>
+<!--                    <h4>CONCEPT</h4>-->
+<!--                    <p class="text-faded" style="font-size: small">-->
+<!--                        Art appreciation is a subjective experience, and individuals often seek personalized recommendations that align with their preferences. This project aims to develop an Arts Recommendation System that incorporates user engagement metrics, specifically time spent on each artwork, to dynamically adjust and refine recommendations. Users can interact with the chatbot to inquire about specific art-related topics, and receive information about artists or art movements.</p>-->
+<!--                        <h4>DATA</h4>-->
+<!--                    <p class="text-faded" style="font-size: small">-->
+<!--                    WikiArt dataset has details about different art pieces. This dataset includes information for about 103250 art pieces and we are considering important columns like artist name, date, genre, style, title and image labels-->
+<!--                     </p>-->
+<!--                    <h4>APPROACH</h4>-->
+<!--                    <p class="text-faded" style="font-size: small">-->
+<!--                        The approach for recommending art categories is based on two factors - user's initial preferences and time spent by user on a particular category.-->
+<!--                        <br><br>-->
+<!--                   A new user registers on the system by entering email id and password as part of the onboarding process. During account setup, the user selects art preferences indicating specific genres of the artworks he is interested in. Upon logging into the platform, the user is presented with an initial set of artwork recommendations based on their selected preferences. Initially, the recommendations are shown by randomly picking three artworks each for the selected preferences. Apart from these, the user sees a "More Artworks" tab which shows artworks other than the selected preferences. When a user selects any artwork to view details about that artwork, they can find information like - title of the artwork, artist name, genre of the artwork and the date that work has been created. To capture attention and retain users' enthusiasm, we show some of the similar artworks that the user might be interested in-->
+<!--                    <br><br>-->
+<!--                   While exploring the recommended artworks, the system tracks the time spent by the user on each piece. The user engages with various artworks, including those outside their initially selected preferences for diversification. The system analyses the accumulated time spent on different artwork categories to infer the user's evolving interests and engagement levels.-->
+<!--Artworks that have garnered more time from the user contribute to a dynamic weighting system, influencing subsequent recommendations.-->
+<!--The user's home page is dynamically adjusted based on their evolving preferences, showcasing a mix of both initially selected preferences and artworks that captured extended attention.-->
+<!--                    <br><br>-->
+<!--                        The user engages with the chatbot to inquire about specific artists, art history, or information related to them. The chatbot enhances the user experience by providing additional insights and fostering a conversational interaction around art-related topics.-->
+<!--                    </p>-->
+<!--                     <h4>ALGORITHMS AND TOOLS USED</h4>-->
+<!--                    <p class="text-faded" style="font-size: small">-->
+<!--                    In order to analyze the Jeopardy data and generate insights out of it, we followed the a process that looked at the data using the following visualizations:-->
+<!--                    <ul class="text-faded" style="font-size: small">-->
+<!--                            <ul>-->
+<!--                                <li>Open AI CLIP Model - similarity search artworks</li>-->
+<!--                                <li>Langchain LLMs - chatbot</li>-->
+<!--                                <li>Pinecone - to store vector embeddings for arts' images</li>-->
+<!--                                <li>Google Cloud Storage - storing tables related to artworks</li>-->
+<!--                                <li>Streamlit - front end for the application</li>-->
+<!--                                <li>Python - Primary programming language</li>-->
+<!--                            </ul>-->
+<!--                    </ul>-->
+<!--                    </p>-->
+<!--                   <a href="https://codelabs-preview.appspot.com/?file_id=1K5KXsSgMQ-jTM3fTJxYQWo1an-y66M_F1NfkNllJC_g#0"class="btn btn-primary btn-xl page-scroll" target="_blank">View Documentation</a>-->
+<!--                </div>-->
 <!--                <div class="col-lg-4 text-center" style="padding-top: 100px">-->
 <!--                <img src="img/nyce/nyce1.png" class="img-responsive" alt="" style="margin :auto">-->
 <!--                <p>Visualizations</p>-->
