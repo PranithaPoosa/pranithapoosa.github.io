@@ -16,7 +16,7 @@ body {
 
 hr {
     max-width: 50px;
-    border-color: #3AAFA9;
+    border-color: #652d23;
     border-width: 2px;
 }
 
@@ -26,7 +26,7 @@ hr.light {
 
 
 a {
-    color: #3AAFA9;
+    color: #652d23;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -34,7 +34,11 @@ a {
 
 a:hover,
 a:focus {
-    color: #3AAFA9;
+    color: #652d23;
+}
+
+#project-title {
+color: #652d23;
 }
 
 h1,
@@ -113,7 +117,7 @@ aside {
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #2B7A78!important;
+    color: #652d23!important;
     background-color: transparent;
 }
 
@@ -124,29 +128,29 @@ aside {
 
 @media(min-width:768px) {
     .navbar-default {
-        border-color: #3AAFA9;
+        border-color: #652d23;
         background-color: white;
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: #3AAFA9;
+        color: #652d23;
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
         font-size: 18.5px;
-        color: #3AAFA9;
+        color: #652d23;
     }
 
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
-        color: #3AAFA9;
+        color: #652d23;
     }
 
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
         font-size: 14px;
-        color: #3AAFA9;
+        color: #652d23;
     }
 
     .navbar-default.affix {
@@ -156,24 +160,24 @@ aside {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
-        color: #3AAFA9;
+        color: #652d23;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
         font-size: 15px;
-        color: #2B7A78;
+        color: #652d23;
     }
 
     .navbar-default.affix .nav > li>a,
     .navbar-default.affix .nav>li>a:focus {
-        color: #3AAFA9;
+        color: #652d23;
     }
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
         font-size: 14px;
-        color: #2B7A78;
+        color: #652d23;
     }
 }
 
@@ -184,7 +188,7 @@ header {
     text-align: center;
     color: #fff;
     background-position: center;
-    background-image: url(../img/wave.jpeg);
+    background-image: url(../img/featured_image2.webp);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -193,25 +197,28 @@ header {
 
 .bg-image {
   /* The image used */
+  color: red
 
 
   /* Add the blur effect */
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+
 
   /* Full height */
   height: 100%;
 
   /* Center and scale the image nicely */
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 /* Position text in the middle of the page/image */
 .bg-text {
    /* Black w/opacity/see-through */
-  color: white;
+
+  background-color: white;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -308,9 +315,9 @@ header .header-content .header-content-inner p {
     width: 100%;
     height: 100%;
     text-align: center;
-    color: #fff;
+    color: #652d23;
     opacity: 0;
-    background: #3AAFA9;
+    background: #ffb6ab;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -423,7 +430,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary {
     border-color: #f05f40;
     color: #fff;
-    background-color: #3AAFA9;
+    background-color: white;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -437,7 +444,7 @@ fieldset[disabled] .btn-default.active {
 .open > .dropdown-toggle.btn-primary {
     border-color: #ed431f;
     color: #fff;
-    background-color: #3AAFA9;
+    background-color: white;
 }
 
 .btn-primary:active,
